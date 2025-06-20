@@ -1,0 +1,6 @@
+plt.figure(figsize=(10, 5))
+sns.countplot(data=df, x='job_title', order=df['job_title'].value_counts().index[:10], palette="viridis")
+plt.title("Top 10 AI Job Titles")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
